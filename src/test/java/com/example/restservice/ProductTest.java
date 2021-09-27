@@ -1,4 +1,4 @@
-package com.devskodigo.cloudposbkend;
+package com.example.restservice;
 
 import static org.apache.commons.lang3.RandomStringUtils.*;
 import static org.junit.Assert.*;
@@ -6,6 +6,7 @@ import static org.junit.Assert.*;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 
@@ -21,6 +22,7 @@ public class ProductTest {
         Product product = new Product();
         product.setName(randomAlphabetic(200));
         product.setPrice(Double.parseDouble(randomNumeric(20)));
+
         return product;
     }
 
